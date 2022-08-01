@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            {% block title %}
+
+            {% endblock %}
+            | RVZ Examen final
+        </title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+            
+    </head>
+    <body>
+    <header>   
+        <h1> Examen final [LP3] | RVZ </h1>
+        <hr/>
+        <ul>
+            <li>
+                <a href="/Cursos"> Cursos</a>
+            </li>
+            <li>
+                <a href="/Crearcurso"> Crear Curso</a>
+            </li>
+            <li>
+                <a href="/Carreras"> Carreras</a>
+            </li>
+            <li>
+                <a href="/Crearcarrera"> Crear Carreras</a>
+            </li>
+        </ul>
+    </header>
+        <hr/>
+
+        <div id="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+        <footer>
+            UNTELS - Lenguaje de Programación III &copy; RVZ
+        </footer>
+    </body>
+</html>
